@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Figtree:wght@600;800&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto+Mono:wght@500&display=swap');
+
+:root{
+    --colour-yellow: hsl(47, 88%, 63%);
+    --colour-white: hsl(0, 0%, 100%);
+    --colour-grey: hsl(0, 0%, 50%);
+    --colour-black: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+body{
+    background-color: var(--colour-yellow);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container{
+    max-width: 400px;
+    margin: auto;
+    background-color: var(--colour-white);
+    padding-top: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 0px var(--colour-black);
+    border: 1px solid var(--colour-black);
+    transition: all 0.3s ease;
+}
+.container .image img{
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem 0 0 0; 
+}
+.container h2{
+    display: inline-block; 
+    background-color: var(--colour-yellow);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 7px 15px;
+    margin: 1rem .25rem;
+    font-weight: bold;
+}
+.container .info #published{
+    margin: 0rem .25rem;
+}
+.container .info #description{
+    margin: 1rem .25rem 2rem;
+    color: var(--colour-grey);
+}
+h1{
+    transition: all 0.3s ease; 
+    margin: 1rem .25rem;
+}
+h1:hover{
+    color: var(--colour-yellow);
+    cursor: pointer; 
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.attribution{
+    color: var(--colour-white);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
